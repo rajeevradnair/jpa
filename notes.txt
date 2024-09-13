@@ -14,9 +14,10 @@ spring.h2.console.enabled=true
 JUnit annotations:
 ------------------------
 Class level:
-  @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-  @DataJpaTest
+  @SpringBootTest -> brings the entire Spring Boot context including output of CommandLineRunner
+  @DataJpaTest -> brings only H2 context
+  @TestMethodOrder(MethodOrderer.OrderAnnotation.class) -> required for @Order
 Method level:
     @Commit
-    @Order(1)
+    @Order(1), @Order(2)
     @Test
