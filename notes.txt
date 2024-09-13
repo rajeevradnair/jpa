@@ -25,10 +25,12 @@ Method level:
 
 hibernate.hbm2ddl.auto:
 --------------------------
-  • none - Disables schema generation tool
-  • create-only - Create database schema from JPA Entities
-  • drop - drops database tables related to JPA Entities
-  • create - drops database schema and re-creates from JPA Entities
-  • create-drop - drops database schema and re-creates from JPA Entities, then will drop when shutting down
-  • validate - Validates schema, fatal error if wrong
-  • update - updates schema from JPA Entities 
+    • none - Disables schema generation tool
+    • create-only - Create database schema from JPA Entities
+    • drop - drops database tables related to JPA Entities
+    • create - drops database schema and re-creates from JPA Entities
+    • create-drop - drops database schema and re-creates from JPA Entities, then will drop when shutting down
+    • validate - Validates schema, fatal error if wrong
+    • update - updates schema from JPA Entities
+
+For **production systems**, use Validate or None
